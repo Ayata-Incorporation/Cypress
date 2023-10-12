@@ -3,50 +3,70 @@ export class Data {
    loginuserName = "superadmin"
    password = "superadmin"
    //Add Staff
-   staffuserName = "testaaaa"
-   staffRoles = "Admin"
-   stafffirstName = "testaaaa"
-   stafflastName = "testfaaaa"
-   staffEmail = "test2aa@gmail.com"
-   staffphoneNumber = 98998787878
+   staffuserName = "TestC "
+   staffRoles = "Admin" // cant change
+   stafffirstName = "TestC "
+   stafflastName = "TestC "
+   staffEmail = "TestC a@gmail.com"
+   staffphoneNumber = 98911111111
 
    //Add Schools
-   schoolName = "Myschool"
+   schoolName = "TestC "
    schoolsubDomain = "subdom"
    schooltaxPayerId = 11111
    schoolcontactName = "Ram"
-   schoolEmail = "Ram@test.com"
-   schoolcellNumber = 123456789
-   schoolCountry = 'Nepal'
-   schoolphoneNumber = 9878787878
-   schoolselectCountry = "Ar"
+   schoolEmail = "RamA@test.com"
+   schoolcellNumber = 7878789899
+   schoolCountry = 'Nepal' // cant change
+   schoolphoneNumber =67676789978
+   schoolselectCountry = "Ar" //cant change
    schooladdressMunicipality = "Kathmandu"
    schooladdress1 = "Anamnagar"
    schooladdress2 = "Baneshwor"
    schooldepartmentName = "IT"
-   schoolplanName = "Evening"
-   schooldeliveryModality = "Presencial"
+   schoolplanName = "Evening" // cant change
+   schooldeliveryModality = "Presencial" // cant change
 
    //Add Grades
-   gradecategoryName = "Grade G"
-   gradeName = "Grade G"
+   gradecategoryName = "TestC "
+   gradeName = "TestC "
 
 //Add Careers
-careersGrade="Grade G"
-careersName="Careers A"
+careersGrade="TestC "
+careersName="TestC "
 
    //Add course
-    CourseName="Course A"
- coursegradeName="Grade G"
+    CourseName="TestC "
+ coursegradeName="TestC "
 
  //Add course level
-  levelTypeName ="Level Type B"
- levelName="Level B"
+  levelTypeName ="TestC "
+ levelName="TestC "
 
  //Add unit
-  unitName= "Unit 2"
- unitgradeName ="Grade G"
- unitcourseName="Course A"
+  unitName= "TestC "
+ unitgradeName ="TestC "
+ unitcourseName="TestC "
  startDate = "2022-04-05"
  endDate ="2023-06-08 "
+
+ // Add Skills
+ skillName="TestC "
+ skillGradename ="TestC " 
+ skillCareerName="" //if careerr name available
+ skillCourse="" // if course  available
+ skillLevelname="TestC "
+
+ //Add Indicator
+ indicatorName="TestC "
+ indicatorGrade="TestC "
+ indicatorUnit="TestC "
+ indicatorSkills=""
+
+ //Add Lesson
+ lessonName=
+ "TestC "
+ lessonGrade="TestC "
+ lessonUnit="TestC "
+ lessonIndicator="TestC "
 }
