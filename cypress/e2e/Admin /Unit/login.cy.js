@@ -1,4 +1,4 @@
-import { Data } from "../data";
+import { Data } from "../../admin data";
 const inputdata = new Data();
 
 it('login', () => {
@@ -7,7 +7,4 @@ it('login', () => {
     cy.get('input[name="password"]').type(inputdata.password);
       cy.get('button[type="submit"]').click();
   
-      cy.get('[href="/contents"] > .sidebar_menu_item').click();
-      cy.get('a > ._button_1ejx6_24').click();
-      
 })

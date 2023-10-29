@@ -1,6 +1,7 @@
-import { Data } from "../data";
+import { Data } from "../admin data";
 const inputdata = new Data();
 
+describe('add', () => {
 it('login', () => {
   cy.visit('https://admin.unentrance.com/')
   cy.get('input[name="identity"]').type(inputdata.loginuserName);
@@ -22,7 +23,7 @@ it('login', () => {
     cy.get('input[name="phoneNumber"]').type(inputdata.staffphoneNumber);
     //Submit
     cy.get('button[type="submit"]').click();
-    cy.get('button[type="submit"]').contains('Submit').click();
+    cy.get('button[type="submit"]').click();
 
     //Go to schools page
     cy.contains(".sidebar_menu_item_text", "Schools").click();
@@ -31,8 +32,8 @@ it('login', () => {
     cy.get('input[name="name"]').type(inputdata.schoolName)
     cy.get('input[name="subDomain"]').type(inputdata.schoolsubDomain)
     cy.get('input[placeholder="Enter tax payer Id"]').type(inputdata.schooltaxPayerId)
-    cy.get('#react-select-2-placeholder').click();
-    cy.get('#react-select-2-option-0').click();
+    cy.get('#react-select-3-placeholder').click();
+    cy.get('#react-select-3-option-0').click();
     cy.get('button[type="submit"]').click();
     //Contact forms
     cy.get('input[name="contact.contactName"]').type(inputdata.schoolcontactName)
@@ -43,29 +44,32 @@ it('login', () => {
     cy.get('input[name="contact.phoneNumber"]').type(inputdata.schoolphoneNumber);
     cy.get('button[type="submit"]').contains('Next >').click();
     //Address forms
-    cy.get('#react-select-3-input').click({ force: true });
-    cy.get('#react-select-3-input').type(inputdata.schoolselectCountry).type('{enter}');
+    cy.get('#react-select-4-placeholder').type(inputdata.schoolselectCountry);
+    cy.get('.css-d7l1ni-option').click();
+
     cy.get('input[name="address.municipality"]').type(inputdata.schooladdressMunicipality)
     cy.get('input[name="address.address1"]').type(inputdata.schooladdress1)
     cy.get('input[name="address.address2').type(inputdata.schooladdress2)
     cy.get('input[name="address.department"]').type(inputdata.schooldepartmentName)
     cy.get('button[type="submit"]').contains('Next >').click();
     //Feature forms
-    cy.get('#react-select-4-placeholder').click();
+    cy.get('#react-select-5-placeholder').click();
     cy.get('.css-d7l1ni-option').click(); // select option daily 
     cy.get('.css-wcpg89-placeholder').click();
     cy.get('.css-d7l1ni-option').click();
     cy.get('input[name="feature.educationLevels"]').check()
     //submit
-    cy.get('button[type="button"]').contains('Submit >').click();
+    cy.get('.pull-right > ._button_1ejx6_24').click();
     //confirm submit 
+
+
     cy.get('button[type="submit"]').contains('Confirm Submit').click();
     //Grade category
-    cy.get('[href="/grades"] > .sidebar_menu_item > .sidebar_menu_item_text').click();
-    cy.get('._button_1ejx6_24').click();
-    cy.get('#name').type(inputdata.gradecategoryName);
-    cy.get('#description').type('This.test')
-    cy.get('[type="submit"]').click();
+    // cy.get('[href="/grades"] > .sidebar_menu_item > .sidebar_menu_item_text').click();
+    // cy.get('._button_1ejx6_24').click();
+    // cy.get('#name').type(inputdata.gradecategoryName);
+    // cy.get('#description').type('This.test')
+    // cy.get('[type="submit"]').click();
     // Add Grade
     cy.get('.d-flex > :nth-child(2)').click();
     cy.get('._button_1ejx6_24').click();
@@ -86,7 +90,7 @@ it('login', () => {
 
       //Add course 
       cy.get('[href="/courses"] > .sidebar_menu_item > .sidebar_menu_item_text').click();
-      cy.get('a > ._button_1ejx6_24').click();
+      cy.get('._button_1ejx6_24').click();
       cy.get('#name').type(inputdata.CourseName);
       cy.get('#description').type('this is test ')
       cy.get('#react-select-2-placeholder').type(inputdata.coursegradeName +'{enter}' );
@@ -148,5 +152,5 @@ it('login', () => {
      cy.get('.css-d7l1ni-option').click();
      cy.get('[type="submit"]').click();
 
-
+})
   })

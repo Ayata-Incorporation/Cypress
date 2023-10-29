@@ -3,12 +3,12 @@ export class Data {
    loginuserName = "superadmin"
    password = "superadmin"
    //Add Staff
-   staffuserName = "TestC "
+   staffuserName = "testa "
    staffRoles = "Admin" // cant change
-   stafffirstName = "TestC "
-   stafflastName = "TestC "
-   staffEmail = "TestC a@gmail.com"
-   staffphoneNumber = 98911111111
+   stafffirstName = "testa "
+   stafflastName = "testa "
+   staffEmail = "testaa@gmail.com"
+   staffphoneNumber = 98999999990
 
    //Add Schools
    schoolName = "TestC "

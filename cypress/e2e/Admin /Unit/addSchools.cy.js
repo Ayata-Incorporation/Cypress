@@ -1,4 +1,4 @@
-import { Data } from "../data";
+import { Data } from "../../admin data";
 const inputdata = new Data();
 
 //login 

@@ -1,11 +1,13 @@
-import { Data } from "../data";
+import { Data } from "../../admin data";
 const inputdata = new Data();
 
+
+//login 
 it('login', () => {
-    cy.visit('https://admin.unentrance.com/')
-    cy.get('input[name="identity"]').type(inputdata.loginuserName);
-    cy.get('input[name="password"]').type(inputdata.password);
-      cy.get('button[type="submit"]').click();
+  cy.visit('https://admin.unentrance.com/')
+  cy.get('input[name="identity"]').type(inputdata.loginuserName);
+  cy.get('input[name="password"]').type(inputdata.password);
+  cy.get('button[type="submit"]').click();
   
       //Add Skills
       cy.get('[href="/skills"] > .sidebar_menu_item').click();
